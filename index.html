@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<!--
+    Will use W3 css files but will attempt to make my own css in the future
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Keywords" content="Liam, Carriker">
+        <meta name="Description" content="Homepage designed by Liam Carriker to display self-created content and other fun doo-das. Enjoy!">
+
+        <title>LC Homepage</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+
+        <!--Google Fonts (can update with your own)-->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/practice_index_style.css">
+        
+    </head>
+
+    <body>
+        <header>
+            <div class="logo">
+                <img src="images/logo2.jpg", alt="">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">What I Can Do</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">My Projects</a></li>
+                </ul>
+            </nav>
+        
+        </header>
+
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hi, I am <strong>Liam Carriker</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Computer Scientist</p>
+            <img src="images/l_profile_pic.jpg" alt="l-profile-pic" class="intro__img">
+        </section>
+
+        <!-- My Services -->
+        <section class="my-services" id="services">
+            <h2 class="section__title section__title--services">What I do</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Computing Systems</h3>
+                    <p> 
+                        I am currently completing my Masters in Computer Science, with a 
+                        specialty in Computing Systems, at Georgia Institute of Technology 
+                        (go Jackets!). Within this specialty, I have taken classes focusing on
+                        networks, security (both in networks and physical systems), and
+                        machine learning. 
+                    </p>
+                </div> <!--close service-->
+
+                <div class="service">
+                    <h3>Machine Learning/Reasoning</h3>
+                    <p> 
+                        I have had a wide range of exposure to Machine Learning, having taken 
+                        undergraduate and graduate level courses in the topic. I am familiar
+                        with various supervised and unsupervised learning models, and have 
+                        experience with reinforcement learning techniques as well. Through 
+                        these classes, I have also developed and understanding for up-to-date 
+                        practices and issues in Machine Learning, having read numerous
+                        papers on present-day models. 
+                    </p>
+                </div> <!--close service-->
+
+                <div class="service">
+                    <h3>Personal Projects</h3>
+                    <p> 
+                        With constant exposure to what types of operations computer science
+                        can augment, it was not hard to start writing code for my own personal
+                        projects. These trend more towards Python projects, as they consist more
+                        of scrapers for automated data compilation, a D&D Dungeon Master assist tool, 
+                        experimenting with different languages natively (no specific environments or
+                        packages), and some work with creating webpages. 
+
+                    </p>
+                </div> <!--close service-->
+            </div> <!--close services-->
+
+            <a href="#work" class="btn">Projects</a>
+        </section>
+
+        <!-- About Me -->
+        <section class="about-me" id="about">
+            <!-- Can surround h2 and subtitle with header if you want-->
+            <h2 class="section__title section__title--about">Who I Am</h2>
+            <p class="section__subtitle section__subtitle--about">Computer Science Student at Georgia Tech</p>
+
+            <div class="about-me__body">
+                <p>
+                    I am currently a student at Georgia Institute of Technology, 
+                    earning my Masters of Science in Computer Science, with a specialty 
+                    in Computing Systems. My most recent internship was at Cisco Systems
+                    (Summer of 2023), as a Technical Intern II working on software for 
+                    ASIC chips within switches. 
+                </p>
+                <p>
+                    Other hobbies of mine include tennis, 
+                    archery, and playing piano. I also currently volunteer at Open Hand
+                    Atlanta, which works to delivery food to deliver nutritional meals to 
+                    those with nutrition-sensistive chronic disease.
+                </p>
+            </div>
+
+            <img src="images/practice_index_portfolios/gtlogo.jpg" alt="logo placeholder" class="about-me__img">
+        </section>
+
+        <!-- Projects -->
+        <section class="my-work" id="work">
+            <h2 class="section__title">My Projects</h2>
+            <p class="section__subtitle">Some projects I've worked on: </p>
+
+            <div class="portfolio">
+                <!--Porfolio Item 01-->
+                <a href="#" class="portfolio__item">
+                    <img style="height:100%; width:100%" src="images/practice_index_portfolios/webscraping.png" alt="" class="portfolio__img">
+                </a>
+
+                <!--Porfolio Item 02-->
+                <a href="#" class="portfolio__item">
+                    <img style="height:100%; width:100%" src="images/practice_index_portfolios/networks.jpg" alt="" class="portfolio__img">
+                </a>
+
+                <!--Porfolio Item 03-->
+                <a href="#" class="portfolio__item">
+                    <img style="height:100%; width:100%" src="images/practice_index_portfolios/ml.jpg" alt="" class="portfolio__img">
+                </a>
+
+                <!--Porfolio Item 04-->
+                <a href="#" class="portfolio__item">
+                    <img style="height:100%; width:100%" src="images/practice_index_portfolios/dnd.jpg" alt="" class="portfolio__img">
+                </a>
+
+                <!--Porfolio Item 05-->
+                <a href="#" class="portfolio__item">
+                    <img style="height:100%; width:100%" src="images/practice_index_portfolios/misc.jpg" alt="" class="portfolio__img">
+                </a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <a href="mailto:liamcarriker@gmail.com" class="footer__link">liamcarriker@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item"><a class="social-list__link" href="https://linkedin.com">
+                    <i class="fab fa-linkedin"></i></a></li>
+                <li class="social-list__item"><a class="social-list__link" href="https://github.com">
+                    <i class="fab fa-github"></i></a></li>
+                <li class="social-list__item"><a class="social-list__link" href="https://twitter.com">
+                    <i class="fab fa-twitter"></i></a></li>
+            </ul>
+        </footer>
+
+        <script src="js/practice_index.js"></script>
+
+    </body>
+</html>
